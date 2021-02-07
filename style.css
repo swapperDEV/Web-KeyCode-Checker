@@ -1,0 +1,91 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    overflow-X: hidden;
+}
+section {
+    width: 100vw;
+    min-height: 100vh;
+    max-height: 1000vh;
+    background-color: #0d0d1d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+}
+h1 {
+    font-family: 'Potta One', cursive;
+    color: white;
+    text-align: center;
+    font-size: 70px;
+    transition: 0.3s ease;
+    animation: 5.5s changeh1 ease infinite;
+}
+h2 {
+    font-family: 'Potta One', cursive;
+    text-align: center;
+    color: wheat;
+    transition: 0.3s ease;
+    font-size: 40px;
+    animation: 5.5s changeh2 ease infinite;
+}
+b {
+    color: white;
+    font-size: 40px;
+}
+p {
+    color: white;
+    font-size: 25px;
+}
+
+@keyframes changeh1 {
+    0% {
+        color: white;
+    }
+    50% {
+        color: wheat;
+    }
+    100% {
+        color: white;
+    }
+}
+@keyframes changeh2 {
+    0% {
+        color: wheat;
+    }
+    50% {
+        color: white;
+    }
+    100% {
+        color: wheat;
+    }
+}
+.info {
+    color: white;
+    right: 0%;
+    bottom: 0%;
+    padding: 20px;
+    position: fixed;
+    display: block;
+    transition: 0.3s ease;
+}
+.info button {
+    background-color: white;
+    border: 3px solid white;
+    transition: 0.1s ease;
+}
+.info button:hover {
+    transform: scale(1.2)
+}
+.tables {
+    font-family: 'Acme', sans-serif;
+    font-size: 15px;
+    border-bottom: solid 1px white;
+}
+.search {
+    margin: 20px;
+    font-size: 20px;
+}
